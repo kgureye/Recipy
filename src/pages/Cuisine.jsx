@@ -19,7 +19,12 @@ function Cuisine() {
         getCuisine(params.type);
   },[params.type]);
 
-  return ( <Grid> 
+  return ( <Grid
+    animate={{ opacity: 1 }} /* This will be the starting position */
+    initial={{ opacity: 0 }} /*Everytime we nagivate to a page, it will fade in initial to animate (from 0 to 1) */
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}
+  > 
         {cuisine.map((item) => {
             return(
               <Card key={item.id}>
@@ -34,7 +39,8 @@ function Cuisine() {
   )
 }
 
-const Grid = styled.div`
+/* For Grid components, we can do it this way rather than wrapping the return in a motion.div */
+const Grid = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)) ;
     grid-gap: 3rem;
