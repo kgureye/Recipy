@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/recipy/static/css/main.ccd7fc19.css",
+    "main.js": "/recipy/static/js/main.cbe32426.js",
+    "index.html": "/recipy/index.html",
+    "main.ccd7fc19.css.map": "/recipy/static/css/main.ccd7fc19.css.map",
+    "main.cbe32426.js.map": "/recipy/static/js/main.cbe32426.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccd7fc19.css",
+    "static/js/main.cbe32426.js"
+  ]
+}
